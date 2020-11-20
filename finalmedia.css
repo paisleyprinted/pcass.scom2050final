@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>SCOM 2050 FINAL</title>
+
+<link rel="stylesheet" href="finalmedia.css">
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,800;1,400;1,700&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Hide & Show Script -->
+ 
+<script>
+$(document).ready(function(){
+$(".faq-answer").hide();
+$(".faq-question").click(function(){
+$(this).next(".faq-answer").slideToggle('fast');
+});
+});
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #f6ff73;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #f6ff73;
+color: white;
+}
+ 
+::-moz-selection {
+background: #f6ff73;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background-image: url(https://imgur.com/y9UYzUr.png);
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Rubik', sans-serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+#container {
+border: 1px solid #eeeeee;
+border-radius: 5px;
+height: 500px;
+left: calc(50% - 417.5px);
+position: fixed;
+top: calc(50% - 251px);
+width: 835px;
+}
+
+.iilw-wrapper {
+background: #ffffff;
+border-bottom-left-radius: 5px;
+border-top-left-radius: 5px;
+height: 500px;
+position: absolute;
+width: 100px;
+}
+
+.icon-image {
+height: 80px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+width: 80px;
+}
+
+.icon-image img {
+border-radius: 5px;
+height: 80px;
+width: 80px;
+}
+
+.links-wrapper {
+border-top: 1px solid #eeeeee;
+height: 399px;
+margin-top: 10px;
+width: 100px;
+}
+
+.links {
+align-items: center;
+display: flex;
+flex-direction: column;
+font-size: 0.8rem;
+height: 100%;
+justify-content: center;
+text-align: center;
+text-transform: uppercase;
+}
+
+.links a {
+background: none;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+font-variant: normal;
+height: 0.8rem;
+line-height: 1;
+margin: 5px;
+padding: 10px;
+text-rendering: auto;
+width: 0.8rem;
+}
+
+.links a:hover {
+background: #f6ff73;
+color: #ffffff;
+}
+
+.sidebar {
+background-image: url(https://imgur.com/KYuUhwm.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+margin-left: 100px;
+position: absolute;
+width: 300px;
+}
+
+.info {
+background: rgba(255, 255, 255, 0.7);
+border-radius: 5px;
+bottom: 25px;
+font-size: 0.9rem;
+margin-left: 25px;
+padding: 15px;
+position: absolute;
+text-transform: uppercase;
+width: 220px;
+}
+
+.info li {
+border-bottom: 1px solid #eeeeee;
+list-style-type: none;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+.info li:first-child {
+padding-top: 0px;
+}
+
+.info li:last-child {
+border-bottom: none;
+padding-bottom: 0px;
+}
+
+.page-content {
+background: #ffffff;
+border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
+margin-left: 400px;
+height: 460px;
+overflow: auto;
+padding: 20px;
+position: absolute;
+width: 395px;
+}
+
+.title {
+font-family: 'Rubik', sans-serif;
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.tab {
+font-size: 0.9rem;
+margin: -5px;
+margin-top: 10px;
+text-transform: uppercase;
+}
+
+.tab a {
+background: #f5f5f5;
+border-radius: 5px;
+color: #555555;
+display: inline-block;
+margin: 5px;
+padding: 5px;
+transition: 0.3s;
+}
+
+.tab a:hover {
+background: #f6ff73;
+color: #ffffff;
+}
+
+.tab a.active {
+background: #f6ff73;
+color: #ffffff;
+}
+
+.tab-content {
+animation: fadeEffect 1s; 
+border-top: 1px solid #eeeeee;
+display: none;
+margin-top: 20px;
+padding-top: 20px;
+}
+
+@-webkit-keyframes fadeEffect {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+@keyframes fadeEffect {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+.tab-title {
+font-weight: bold;
+font-size: 1rem;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+.blog {
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+
+.analysis {
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.workscited {
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.citeurl {
+font-size: 0.6rem;
+margin-top: 5px;
+margin-left: 15px;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: lowercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #f6ff73
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="iilw-wrapper">
+
+<div class="icon-image"><img src="https://imgur.com/nX1NFfE.png"/></div>
+
+<div class="links-wrapper">
+
+<div class="links">
+<a href="mailto:pcass1@student.gsu.edu" title="Email"><i class="far fa-envelope"></i></a>
+<a href="https://www.instagram.com/paisley.printed/" title="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://open.spotify.com/user/paisley_printed?si=yoeyaMQ2Si2dbwJQxGBoRA/" title="Spotify"><i class="fab fa-spotify"></i></a>
+<a href="https://www.snapchat.com/add/paisley_printed" title="Snap"><i class="fab fa-snapchat"></i></a>
+<a href="https://www.instagram.com/parsley.casserole" title="Spam"><i class="fas fa-user-ninja"></i></a>
+</div>
+
+</div>
+
+</div>
+
+<div class="sidebar">
+
+<div class="info">
+<li><i class="far fa-grin-stars"></i><font style="float: right;">Paisley C</font></li>
+<li><i class="fas fa-check"></i><font style="float: right;">she/her</font></li>
+<li><i class="fas fa-birthday-cake"></i><font style="float: right;">04/11/2000</font></li>
+<li><i class="fas fa-globe-americas"></i><font style="float: right;">Atlanta, ga</font></li>
+</div>
+
+</div>
+
+<div class="page-content">
+    
+<div class="title">SCOM 2050 - Final Media</div>
+    
+<div class="tab">
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen">Blog</a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen">Analysis</a>
+<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen">Works Cited</a>
+</div>    
+
+<!-- Start of Blog -->    
+    
+<div id="one" class="tab-content">
+
+<div class="tab-title">The Battle of Britpop</div>
+
+<div class="Blog">
+By the 1990s, Americans were no stranger to English bands. After the first two British invasions that introduced us to acts such as the Beatles and new genres like punk rock, it was time for a new English subgenre to head a countercultural movement. Enter Britpop, the genre that was so influential, it molded the sound of not just rock, but alternative hiphop. To talk about about Britpop, you must first talk about the infamous chart battle between bands Oasis and Blur, more commonly known across the pond as “The Battle of Britpop”.<br> 
+
+</br>Specifically, what is Britpop? Britpop is most easily described as music that is “horrendously British” in the same way the rest of the world perceives country music as “painfully American”. Originally noted as a fringe movement by Youtuber Trash Theory, Britpop easily became a force to be reckoned with thanks to the creation, and later media frenzied rivalry of bands Oasis and Blur. Oasis, hailing from rural Manchester, was conceptualized in 1991 by brothers Liam and Noel Gallagher. Their sound was once described as “...devoid of finesse and complexity” by music journalist John Harris, later adding that despite this review, “they were unstoppable”. From London came university students that formed the band Blur, who began in 1988 fronted by Damon Albarn. Blur’s music varied from Oasis’ pop rock sound as they were influenced by punk bands such as the Kinks, the Clash, and the Smiths. Arguably, Blur were the better musicians than Oasis, but if you know anything about pop music, it isn’t about talent; it’s about what sells.<br> 
+
+</br>In 1995, the seemingly underground rivalry came to a head when both bands decided to release singles on the same day. Originally to be released on August 21st, Blur’s “Country House” was moved a week back to August 14th to compete with Oasis’ “Roll With It”, seemingly, fueling the flame of a feud. Many saw this as a petty yet malicious move, but in regards to music business, this was simply an assurance of a fair game. Logically, a song released earlier has a better chance of staying on the chart longer, regardless of its musical quality. Its relevance would overshadow its talent. So, to make this a competition of popularity rather than an instance of “right place, right time”, Blur had to move their single a week back to mimic the Oasis release date. And what a genius move that was. While “Country House” was by no means Blur’s best work, it sold 58,000 copies in its first week and its final sales totaling to 274,000, with Oasis paling in comparison with 216,000 sales, landing them the number two spot on the charts. Many will say that while Blur won the battle, Oasis won the war, in terms of longevity. But there are different ways to measure this success.<br>
+
+</br>Oasis went on to gain notoriety in the US with their single “Wonderwall” sitting at the top of the charts for an impressive ten weeks, but their prevalence in 2020 doesn’t expand beyond rumors of reunion tours and the beef brothers Noel and Liam engage in on twitter. And while it can be argued that the meme of telling any guy with a guitar to play Wonderwall at a party will never not be funny, that’s all the band ma be remembered for; a cringe 2015 joke. In actuality, the true winner of this rivalry isn’t Oasis nor Blur, but rather Blur’s frontman Damon Albarn. After the decline of both bands, Albarn conceptualized a new wave of alternative hiphop in a vessel of a virtual band named, Gorillaz. Gorillaz achieved what both Oasis and Blur had failed at: worldwide fame, a cult-like following, and most impressively, a Grammy. However, without this battle of 1995, the creation of this award-winning group would’ve never come into fruition.<br>
+
+</br>While Britpop “popped” after its battle, its influence bled into the sound and shipment of British music well into the 2000’s. Overall, this chart clash signaled a turning point in music, demonstrating that career long success is no longer reliant on the miniscule moments of chart placements. It occurred before a time of streaming, where radio play and physical sales determined your musical worth. Nowadays, musical worth is determined by talent, and rightfully so. 
+</div>
+
+</div>
+
+<!-- End of Blog -->  
+
+
+<!--Start of Analysis -->
+
+<div id="two" class="tab-content">
+ 
+<div class="tab-title">Analysis</div>
+
+<div class="analysis">
+
+The media I have chosen to submit for our final project is a blog post in the style of a music journalism article. The analysis that follows will address the conventions and preconceived notions of the genre, the limiting cultural effects of my media, and my intended impact from this work. Through this submission I want to display that journalism expands beyond political or news coverage and that pop music can be discussed outside of gimmicky tabloids or gossip columns, and by any person who has a passion for it.
+
+<br>A limiting cultural effect of my media is the ignorant notion that artistic genres have color or racial connotations. Growing up in a predominantly white suburb I was constantly teased for liking “white people music”, and it would genuinely hurt my spirits. Now that I am older and have decided to pursue music in college, I know there’s no such thing as “white people music”. While many styles of music have ethnic or racial ties like reggaeton or polka, pop music is a cultural amalgamation.  It pulls the best traits from these subgenres and upcycles it to a new audience. The magic of pop music is that is brings opposite sides of the world together. The best support of this claim is examining the rise of K-Pop in Western media over recent years. A 2018 study shows that 63% Americans aged 13-34 are conscious of K-Pop, with 76% of American K-Pop listenership attributing to white people (Hyde, 2018)! Of that 76%, how many do you think are fluent or even sufficient in Korean? K-Pop embodies the best attribute of pop music; that it is enjoyable for all; and the power of that feeling is the message I want to convey to the audience, whether they be part of the shunned American Blur fans, the global Gorillaz fanbase, or any nerd who’s into Britpop like myself.</br>
+
+<br>The most prominent convention belonging to the journalism medium is maintaining objectivity. Accredited music publications like the Rolling Stone or NME have built their reputations on delivering nonpartisan news and reviews and are rarely bold in the few opinions they give. As mainly interview based publications, journalists present the artists with black and white questions (Sheffield, 2019). All inquiries of substance are aimed at how the musician feels, as feeling things and creating subsequent art is literally their job, and the voice of the writer is buried under all the celebrity charisma. Even caricatures like Canadian radio personality Nardwuar fall victim to the dynamism draining constraints of objectivity. Because of this, I chose the presentation of my media to be on an originally drafted .html file as a tribute to old school music blogs and to further display my personal quirks. I refuse to be yet another flat, gray, writer. Others who have stepped out of the traditional delivery of music coverage are those on Youtube. This medium has a large impact because of its accessibility to consumers. It allows viewers to multitask or put in little effort for active participation while the writer freely rants and delivers their stance in the background of their audience’s day. Volksgeist, Middle8, and Polyphonic are examples of obeying the conventions of objectivity in this new media with a large audience of 1.4 million subscribers combined.</br>
+
+<br>Unfortunately, my work only has the potential of micro influence. To cite my response in class discussion six, a short essay about a niche British chart battle will seldom change one’s way of life. However, strong emotions can be tied to these artists, and a viewer’s inability to distinguish emotional reactions from reasonable ones can influence how the media is consumed. My hopes for the positive impact from this project are that it resonates with any individual who can see an aspect of themselves in me. Whether the individual be a coder, a musician, a writer, black or a girl, I hope my passion resonates and provides reference to whatever they go on to pursue. To quote Geena Davis, “If she can’t see it, she can’t be it.” If one person outside of this course sees my contribution towards a good grade, my implication could be powerful.</br>
+
+
+</div>
+
+
+</div>
+
+<!-- Start of Works Cited -->
+
+<div id="three" class="tab-content">
+
+<div class="tab-title">Works Cited</div>
+
+<div class="workscited">
+
+<u>The Battle of Britpop</u>
+
+<br>
+<b>Beaumont, Mark.</b>
+“Blur and Oasis’ big Britpop chart battle – the definitive story of what really happened.” 
+<i>NME,</i> 14 August 2019, 
+
+<div class="citeurl">
+<a href= "https://www.nme.com/blogs/nme-blogs/blur-and-oasis-big-britpop-chart-battle-the-definitive-story-of-what-really-happened-757277.">https://www.nme.com/blogs/nme-blogs/blur-and-oasis-big-britpop-chart-battle-the-definitive-story-of-what-really-happened-757277.</a>
+</br>
+</div>
+
+<br>
+<b>Elliot, Paul.</b>
+“Hey Hey We’re The Monkeys!” <i>Q Magazine,</i> August 2001.
+
+<div class="citeurl"> 
+<a href="https://gorillaz-news.livejournal.com/11140.html">
+https://gorillaz-news.livejournal.com/11140.html.
+</a>
+</div>
+</br>
+
+<br>
+<b>Harris, John.</b>
+<i>The Last Party: Britpop, Blair, and the Demise of British Rock.</i> Harper Perennial, 2004.
+</br> 
+
+
+<br>
+<b>Heath, Chris.</b> “The 21 People Who Changed Music: Damon Albarn.” 
+<i>Veikko’s Blur Page,</i> November 2007, 
+
+<div class="citeurl">
+<a href="http://www.vblurpage.com/articles/stories/q_07.htm>
+http://www.vblurpage.com/articles/stories/q_07.htm.
+</a>
+</div>
+</br>
+
+<br>
+<b>Nicolson, Barry.</b> “Blur v Oasis: the Britpop battle remains as contrived and cynical as ever.” 
+<i>The Guardian,</i> 2 May 2017, 
+
+<div class="citeurl">
+<a href="https://www.theguardian.com/music/musicblog/2017/may/02/blur-oasis-vendetta-britpop-damon-albarn-noel-liam-gallagher#:~:text=%E2%80%9COasis%2C%20being%20Oasis%2C%20decided,emerge%20victorious%2C%20if%20mildly%20traumatised">
+
+https://www.theguardian.com/music/musicblog/2017/may/02/blur-oasis-vendetta-britpop-damon-albarn-noel-liam-gallagher#:~:text=%E2%80%9COasis%2C%20being%20Oasis%2C%20decided,emerge%20victorious%2C%20if%20mildly%20traumatised.
+</a>
+</div>
+</br> 
+
+<br>
+<b>Trash Theory.</b> “Blur vs Oasis: Who Won The Battle of Britpop?” 
+<i>Youtube,</i> 23 Jan. 2019, 
+
+<div class="citeurl">
+<a href="https://www.youtube.com/watch?v=0vTDXvkslk8">
+https://www.youtube.com/watch?v=0vTDXvkslk8.
+</a>
+</div>
+</br>
+
+<u>Analysis</u>
+<br>
+<b>American Association of Pediatrics (AAP).</b> “Media Violence”. 
+<i>Pediatrics.</i> 2001. 108:1222-1226
+</br>
+
+<br>
+<b>Brand, Rebecca.</b> “If She Can’t See It, She Can’t Be It: Why Media Representation Matters”. 
+<i>The Guardian.</i> November 12th, 2013. 
+
+<div class="citeurl">
+<a href="https://www.theguardian.com/women-in-leadership/2013/nov/12/media-representation-matters">
+https://www.theguardian.com/women-in-leadership/2013/nov/12/media-representation-matters
+</a>
+</div>
+</br>
+
+<br>
+<b>Hyde, Doug.</b> “The K-Pop Invasion: A Look at America’s New, Young, and Audio-Centric Audience”. 
+<i>Westwood One.</i> May 29th, 2018.  
+
+<div class="citeurl">
+<a href="https://www.westwoodone.com/2018/05/29/the-k-pop-invasion-a-look-at-americas-new-young-audio-centric-audience/#:~:text=Nationwide%2C%20nearly%202%20out%20of,is%20making%20an%20impact%20across">
+https://www.westwoodone.com/2018/05/29/the-k-pop-invasion-a-look-at-americas-new-young-audio-centric-audience/#:~:text=Nationwide%2C%20nearly%202%20out%20of,is%20making%20an%20impact%20across
+</a>
+</div>
+</br>
+
+<br>
+<b>Lawson, Kimberly.</b> “Why Seeing Yourself Represented On Screen is So Important”. 
+<i>Vice.</i> February 20th, 2018. 
+
+<div class="citeurl">
+<a href="https://www.vice.com/en/article/zmwq3x/why-diversity-on-screen-is-important-black-panther">
+https://www.vice.com/en/article/zmwq3x/why-diversity-on-screen-is-important-black-panther
+</a>
+</div>
+</br>
+
+<br>
+<b>Rose, Caryn.</b> “She Can Make That Guitar Talk”. 
+<i>NPR.</i> September 24th, 2019. 
+
+<div class="citeurl>
+<a href="https://www.npr.org/2019/09/24/759600717/she-can-make-that-guitar-talk">
+https://www.npr.org/2019/09/24/759600717/she-can-make-that-guitar-talk
+</a>
+</div>
+</br>
+
+<br>
+<b>Sheffield, Rob.</b> “The Eternal Sunshine of Harry Styles”. 
+<i>Rolling Stone.</i> August 26th, 2019. 
+
+<div class="citeurl">
+<a href="https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/">
+https://www.rollingstone.com/music/music-features/harry-styles-cover-interview-album-871568/
+</a>
+</div>
+</br>
+
+</div>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+ 
+</html>
